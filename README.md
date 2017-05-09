@@ -72,3 +72,11 @@ MyList is immutable - there is no variable state and each operation returns a ne
 _3. For a very large list how could you decompose the problem over many nodes_
 
 MyList is in effect a singly linked list, and could be extended / modified such that different portions of the list could be store on different nodes. However, in processing the list, it must be walked so it does not lend itself to processing different chunks in parallel. For very large problems and to allow for distribution and parallelization, a different data structure akin to Scala's Vector would be more suitable, such that the MyList implementation is an n-ary tree where each node stores n references to child nodes or n peices of data.  Operations could then be writen so that processing is farmed out in parallel on different chunks of the tree and recombined at the end.
+
+## Getting Started
+
+Run all tests using:
+```
+> sbt test
+```
+
