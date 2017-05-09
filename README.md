@@ -9,7 +9,7 @@ Implement a generic List data structure supporting at least the following operat
 We are interested in your data structure design choices, so create your list from your language primitives, do not wrap an  already existing data structure or container such as ArrayList.
 
 The expected behavior:
-
+```
 MyList(1,2,3,4).reverse
 > MyList(4,3,2,1)
 
@@ -27,7 +27,7 @@ MyList("foo","bar","baz","boom").foldLeft(0)((a,x) => a + x.length)
 
 List("foo","bar","baz").foldLeft("")((a,x) => a + x)
 > "foobarbaz"
-
+```
 BONUS QUESTIONS:
 1. What are the computational complexities for the operations that you have implemented
 2. What guarantees your implementation provide regarding concurrent access and modification
